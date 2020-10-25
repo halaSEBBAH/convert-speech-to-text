@@ -5,7 +5,7 @@ import os
 from google.cloud import speech
 
 ### to indicate the api key
-credential_path = "C:\\Users\\hala\\Documents\\Ma formation\My Project-b17003affe03.json"
+credential_path = "C:\the path to file.json"
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
 
 
