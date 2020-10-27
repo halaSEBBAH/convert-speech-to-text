@@ -25,8 +25,9 @@ SECRET_KEY = 'wja8w0wm)tsa+f99b8p-4avuan#@!90%gt9o^@#b^n%^jy@+c!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS=[]
 
+#CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
 
@@ -37,7 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    "rest_framework.authtoken",
+    'corsheaders',
     'speech_to_text',
+
 ]
 
 MIDDLEWARE = [
@@ -45,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -124,3 +130,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'speech_to_text/static'),
 )
+
+
+DATA_UPLOAD_MAX_NUMBER_FIELDS = 10240

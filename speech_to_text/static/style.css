@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    height: fit-content;
+}
+body {
+    background-color : #5ca2a2 ;
+    display: grid;
+    padding : 5% ; 
+    font-family:  helvatica ; 
+}
+textarea {
+  width: 800px;
+  height: 400px;
+  position:center;
+}
+
+input[type="file"] {
+    display: none;
+}`
+input, textarea{
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.custom-file-upload {
+    background-color: #335672 ; 
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+  background-color: #999999;
+}
+
+
+button{
+	  background-color: #cccccc ; 
+	  color: black;
+	  padding: 14px 20px;
+	  margin: 8px ;   
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+}
+
+
+img#loading{
+    position: relative;
+    top: -521px;
+    left: 155px;
+    display: none;
+}

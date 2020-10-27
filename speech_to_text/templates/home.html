@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body style="text-align: center;">
+
+    <form action="" method="post" class="form-example"  enctype="multipart/form-data" >
+      {% csrf_token %}
+          <div style = "display :flex-container">
+          <label class="custom-file-upload">
+              <input id= "inpputaudio" type="file" name="document" accept="audio/*" >
+              <span id= "title" >Choose the audio file</span>
+          </label> 
+            <button id="submitButton" type="button" return="false" >Speech to text</button>
+          </div>
+    </form>
+  
+    <div >   
+      <textarea  id="output"  style="text-align: center;" disabled=""></textarea>
+    </div>
+
+    <img  src="{% static 'loading2.gif' %}" id="loading" />
+    <script src="{% static 'formhelper.js' %}" type="text/javascript"></script>
+</body>
+
+</html>
