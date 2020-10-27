@@ -19,9 +19,9 @@ def ajax_responce(request):
 
     if request.method == 'POST' and bool(request.FILES):
         uploaded_file = request.FILES['document']       
-        response = convert_to_text(uploaded_file)
-        for result in response.results:
-            text= text+ "{}".format(result.alternatives[0].transcript)
+        text = convert_to_text(uploaded_file)
+        #for result in response.results:
+        #    text= text+ "{}".format(result.alternatives[0].transcript)
 
     responce = {'msg' : text}
 
