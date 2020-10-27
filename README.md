@@ -1,4 +1,4 @@
-## Search Engine
+## Web speech to text converter
 
 A web page to convert audio files to written text using google api
 
@@ -6,7 +6,6 @@ A web page to convert audio files to written text using google api
 ### Prerequisites
 
 Django version : 2.0.3
-elasticsearch : 7.3.2
 
 
 
