@@ -15,3 +15,15 @@ using the library and the instuctiong described here  https://cloud.google.com/s
 
 
 
+### How to run project
+
+* set google credentials in speech_to_text\google_api_call\convert.py
+* set python virtual environement  
+* naviagate to speech_to_text
+* run python manage.py migrate 
+* run python manage.py runserver
+
+
+
+
+
